@@ -1,0 +1,219 @@
+/* General Styles */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    position: relative;
+    text-align: center;
+    background-color: #000;
+}
+
+.slider-container {
+    position: relative;
+    height: 180px;
+    padding: 1px;
+}
+
+.slider-container>.h1 {
+    color: #fff;
+    font-size: 80px;
+}
+
+.slider-buttons button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px 20px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.slider-buttons button:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.slider-buttons button:first-of-type {
+    left: 20px;
+}
+
+.slider-buttons button:last-of-type {
+    right: 20px;
+}
+
+
+/* Models Section */
+
+#models {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.model {
+    background: #fff;
+    margin: 15px;
+    padding: 20px;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.model:hover {
+    transform: scale(1.05);
+}
+
+.model img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.model ul {
+    list-style: none;
+    padding: 0;
+}
+
+.model ul li {
+    background: #f8f8f8;
+    padding: 8px;
+    margin: 5px 0;
+}
+
+.learn-more {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.learn-more:hover {
+    background: #333;
+}
+
+#contact {
+    padding: 20px;
+    background: #f0f0f0;
+    border-radius: 8px;
+}
+
+#contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+}
+
+#contact-form button {
+    padding: 10px 15px;
+    background: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+
+.model-summary li {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    /* Yuqori burchaklarni yumshatish */
+    padding: 20px;
+    margin: 15px 0;
+    position: relative;
+    /* Hover effektida joylashuvni yaxshilash */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.model-summary li:hover {
+    background-color: #e0f7fa;
+    /* Hoverda fond rangini o'zgartirish */
+    transform: translateY(-3px);
+    /* Yuqoriga ko'tarilishi */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    /* Yuqoriga ko'tarilish paytida soya qo'shish */
+}
+
+.model-summary li::before {
+    content: "🚗";
+    /* Emoji ko'rsatish uchun */
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+#contact-form>input>label>button:focus {
+    background: red;
+}
+
+.model-details {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    display: none;
+    /* Dastlab yashirin */
+}
+
+.model>a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: #000;
+}
+
+a:hover {
+    color: gray;
+    transition: 0.3s;
+    transform: scale(1.5);
+}
+
+#contact-form>button {
+    background: gray;
+    width: 200px;
+    height: 70px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 550px;
+    border-radius: 10px;
+}
+
+#contact-form>button:hover {
+    background: white;
+    color: gray;
+    transition: 0.4s;
+}
