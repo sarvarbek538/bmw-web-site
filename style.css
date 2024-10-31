@@ -147,26 +147,20 @@ body {
     background-color: #ffffff;
     border: 1px solid #ccc;
     border-radius: 8px;
-    /* Yuqori burchaklarni yumshatish */
     padding: 20px;
     margin: 15px 0;
     position: relative;
-    /* Hover effektida joylashuvni yaxshilash */
     transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
 }
 
 .model-summary li:hover {
     background-color: #e0f7fa;
-    /* Hoverda fond rangini o'zgartirish */
     transform: translateY(-3px);
-    /* Yuqoriga ko'tarilishi */
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-    /* Yuqoriga ko'tarilish paytida soya qo'shish */
 }
 
 .model-summary li::before {
     content: "🚗";
-    /* Emoji ko'rsatish uchun */
     margin-right: 10px;
     font-size: 20px;
 }
@@ -182,7 +176,6 @@ body {
     padding: 20px;
     margin-top: 20px;
     display: none;
-    /* Dastlab yashirin */
 }
 
 .model>a {
@@ -216,4 +209,43 @@ a:hover {
     background: white;
     color: gray;
     transition: 0.4s;
+}
+
+
+/* Media Queries */
+
+
+/* For tablets */
+
+@media (max-width: 768px) {
+    .model {
+        width: 90%;
+    }
+    #contact-form>button {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+}
+
+
+/* For mobile devices */
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px 0;
+    }
+    .slider-container>.h1 {
+        font-size: 40px;
+    }
+    .slider-buttons button {
+        font-size: 14px;
+    }
+    .model {
+        width: 100%;
+    }
+    #contact-form>button {
+        width: 100%;
+        height: 50px;
+    }
 }
